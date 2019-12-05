@@ -51,3 +51,4 @@ https://github.com/qmk/qmk_firmware/blob/ee700b2e831067bdb7584425569b61bc6329247
 http://wiki.chibios.org/dokuwiki/doku.php?id=chibios:guides:port_guide
 https://github.com/ChibiOS/ChibiOS/tree/14f274991fc85b70dd4294c482f6d4ce79e72339/os/hal/boards/OLIMEX_MSP430_P1611
 http://www.sonix.com.tw/article-en-998-21393
+https://ydiaeresis.wordpress.com/2018/04/23/i-dont-steal-bikes-part-2/
