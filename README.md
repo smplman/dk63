@@ -2,15 +2,17 @@
 
 ## Keyboard
 
-*Vendor Page[https://kmovetech.com/dierya-mechanical-gaming-keyboard-rgb-bluetooth40-wired-wireless-multi-device-iphone-android-mobile-pc-p0013.html]
-*Firmware Download[https://kmovetech.com/art/download-a0038.html]
-*Reddit Post[https://www.reddit.com/r/embedded/comments/e4iriu/keyboard_mcu_help/]
+*[Vendor Page[(https://kmovetech.com/dierya-mechanical-gaming-keyboard-rgb-bluetooth40-wired-wireless-multi-device-iphone-android-mobile-pc-p0013.html)
+*[Firmware Download](https://kmovetech.com/art/download-a0038.html)
+*[Reddit Post](https://www.reddit.com/r/embedded/comments/e4iriu/keyboard_mcu_help/)
 
 ## Chips
 
 Main MCU
 EVision VS11K09A-1
-*Device Overview[http://evision.net.cn/include/upload/kind/file/20190413/20190413174647_5965.pdf]
+*[Device Overview](http://evision.net.cn/include/upload/kind/file/20190413/20190413174647_5965.pdf)
+
+Seems to be based on the *[Sonix SN32F249](http://www.sonix.com.tw/files/1/8B8FCED7AC687FBAE050007F01005CB5)
 
 Bluetooth
 PAR2801QN-GHVC
@@ -20,18 +22,12 @@ Vision VSPW01
 
 ## Tools
 
-*Ghidra[https://ghidra-sre.org/]
-
-SVD-Loader for Ghidra automates the entire generation of peripheral structs and memory maps for over 650 different microcontrollers
-*[https://leveldown.de/blog/svd-loader/]
-*[https://binary.ninja/]
-&[https://github.com/radareorg/radare2]
-
-Wireshark USB caprture
-*[https://wiki.wireshark.org/CaptureSetup/USB]
-
-Firmware patch framework
-*[https://github.com/seemoo-lab/nexmon]
+*[Ghidra](https://ghidra-sre.org/)
+*[SVD-Loader](https://leveldown.de/blog/svd-loader/) for Ghidra automates the entire generation of peripheral structs and memory maps for over 650 different microcontrollers
+*[Binary Ninja](https://binary.ninja/)
+*[radare2](https://github.com/radareorg/radare2)
+*[Wireshark USB caprture](https://wiki.wireshark.org/CaptureSetup/USB)
+*[Firmware patch framework](https://github.com/seemoo-lab/nexmon)
 
 ## Links
 
