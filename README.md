@@ -8,14 +8,10 @@
 
 ## Chips
 
-Main MCU
-EVision VS11K09A-1
-* [Device Overview](http://evision.net.cn/include/upload/kind/file/20190413/20190413174647_5965.pdf)
-
+* Main MCU EVision VS11K09A-1[Device Overview](http://evision.net.cn/include/upload/kind/file/20190413/20190413174647_5965.pdf)
 Seems to be based on the [Sonix SN32F249](http://www.sonix.com.tw/files/1/8B8FCED7AC687FBAE050007F01005CB5)
-
-Bluetooth - PAR2801QN-GHVC
-LED driver - Vision VSPW01
+* Bluetooth - PAR2801QN-GHVC
+* LED driver - Vision VSPW01
 
 ## Tools
 
