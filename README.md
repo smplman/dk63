@@ -9,8 +9,8 @@
 ## Chips
 
 * Main MCU - Evision [VS11K09A-1](http://evision.net.cn/include/upload/kind/file/20190413/20190413174647_5965.pdf), Seems to be based on the [Sonix SN32F249](http://www.sonix.com.tw/files/1/8B8FCED7AC687FBAE050007F01005CB5)
-* Bluetooth - PAR2801QN-GHVC
-* LED driver - Vision VSPW01
+* Bluetooth - !TON??? [PAR2801QN-GHVC](https://en.sziton.com/wp-content/uploads/datasheets/module/PAR2801-Q32P-datasheet-v1.2.pdf)
+* LED driver - Vision [VSPW01](http://www.evision.net.cn/include/upload/kind/file/20190413/20190413175237_5340.pdf)
 
 ## Tools
 
@@ -22,6 +22,9 @@
 * [Firmware patch framework](https://github.com/seemoo-lab/nexmon)
 
 ## Links
+
+Firmware Updater Executable Analysis
+https://www.hybrid-analysis.com/sample/21cf79c4f5982e0d73e8269c03a043f16898292920074491d5452eea5155e1eb?environmentId=100
 
 VS11K09A-1 VS 32-Bit Cortex-M0 Micro-Controller
 http://evision.net.cn/include/upload/kind/file/20190413/20190413174647_5965.pdf
