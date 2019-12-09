@@ -17,6 +17,7 @@
 * [Ghidra](https://ghidra-sre.org/)
 * [SVD-Loader](https://leveldown.de/blog/svd-loader/) for Ghidra automates the entire generation of peripheral structs and memory maps for over 650 different microcontrollers
 * [Binary Ninja](https://binary.ninja/)
+* [Cutter](https://cutter.re/)
 * [radare2](https://github.com/radareorg/radare2)
 * [Wireshark USB caprture](https://wiki.wireshark.org/CaptureSetup/USB)
 * Firmware patch framework[nexmon]](https://github.com/seemoo-lab/nexmon)
@@ -43,6 +44,10 @@ https://mrexodia.github.io/reversing/2019/09/28/Analyzing-keyboard-firmware-part
 
 Raspberry PI OpenOCD SWD / JTAG
 https://iosoft.blog/2019/01/28/raspberry-pi-openocd/
+
+Stack Exchange ARM Firmware Reverse Engineering Walkthrough
+https://reverseengineering.stackexchange.com/questions/15311/running-a-binary-identified-as-an-arm-excutable-by-binwalk-disasm/15317
+https://reverseengineering.stackexchange.com/questions/15006/approach-to-extract-useful-information-from-binary-file
 
 * https://docs.qmk.fm/
 * https://github.com/qmk/qmk_firmware/blob/ee700b2e831067bdb7584425569b61bc6329247b/tmk_core/protocol/chibios/README.md
