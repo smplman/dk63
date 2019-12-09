@@ -21,6 +21,7 @@
 * [radare2](https://github.com/radareorg/radare2)
 * [Wireshark USB caprture](https://wiki.wireshark.org/CaptureSetup/USB)
 * Firmware patch framework[nexmon]](https://github.com/seemoo-lab/nexmon)
+* [ARM Assembly Tutorial](https://azeria-labs.com/writing-arm-assembly-part-1/)
 
 ## Links
 
@@ -41,6 +42,8 @@ https://mrexodia.github.io/reversing/2019/09/28/Analyzing-keyboard-firmware-part
 https://mrexodia.github.io/reversing/2019/09/28/Analyzing-keyboard-firmware-part-2
 https://mrexodia.github.io/reversing/2019/09/28/Analyzing-keyboard-firmware-part-3
 
+Hacking the fx-CP400
+https://the6p4c.github.io/2018/01/15/hacking-the-gc-part-1.html
 
 Raspberry PI OpenOCD SWD / JTAG
 https://iosoft.blog/2019/01/28/raspberry-pi-openocd/
