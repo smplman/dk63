@@ -12,6 +12,12 @@
 * Bluetooth - !TON??? [PAR2801QN-GHVC](https://en.sziton.com/wp-content/uploads/datasheets/module/PAR2801-Q32P-datasheet-v1.2.pdf)
 * LED driver - Vision [VSPW01](http://www.evision.net.cn/include/upload/kind/file/20190413/20190413175237_5340.pdf)
 
+## Evision [VS11K09A-1] Debug Recovery Mode
+
+1. Hookup SWCLK, SWDIO, and Ground using the testpoints outlined below
+    * Inset image here
+2. Using the ground point hold the boot pin to ground while turning on the power
+
 ## Tools
 
 * [Ghidra](https://ghidra-sre.org/)
@@ -36,6 +42,9 @@ https://www.youtube.com/watch?v=Qvxa6o2oNS0
 
 BalCCon2k16 - Travis Goodspeed - Nifty Tricks for ARM Firmware Reverse Engineering
 https://www.youtube.com/watch?v=GX8-K4TssjY
+
+Getting STLink V2 Serial Number
+https://armprojects.wordpress.com/2016/08/21/debugging-multiple-stm32-in-eclipse-with-st-link-v2-and-openocd/
 
 Analyzing Keyboard Firmware
 https://mrexodia.github.io/reversing/2019/09/28/Analyzing-keyboard-firmware-part-1
