@@ -25,6 +25,7 @@
 * [Binary Ninja](https://binary.ninja/)
 * [Cutter](https://cutter.re/)
 * [radare2](https://github.com/radareorg/radare2)
+    * [Disassembling arm binary using radare2](https://gist.github.com/JamesHagerman/8d7bfac873fa6b0109b2e68f58d34f35)
 * [Wireshark USB caprture](https://wiki.wireshark.org/CaptureSetup/USB)
 * Firmware patch framework[nexmon]](https://github.com/seemoo-lab/nexmon)
 * [ARM Assembly Tutorial](https://azeria-labs.com/writing-arm-assembly-part-1/)
@@ -45,6 +46,9 @@ https://www.youtube.com/watch?v=GX8-K4TssjY
 
 Getting STLink V2 Serial Number
 https://armprojects.wordpress.com/2016/08/21/debugging-multiple-stm32-in-eclipse-with-st-link-v2-and-openocd/
+
+SUE 2017 - Reverse Engineering Embedded ARM Devices - by pancake
+https://www.youtube.com/watch?v=oXSx0Qo2Upk
 
 Analyzing Keyboard Firmware
 https://mrexodia.github.io/reversing/2019/09/28/Analyzing-keyboard-firmware-part-1

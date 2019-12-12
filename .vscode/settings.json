@@ -1,3 +1,8 @@
 {
-    "python.pythonPath": "/usr/local/bin/python3"
+    "python.pythonPath": "/usr/local/bin/python3",
+    "files.associations": {
+        "*.conf": "NGINX",
+        "sn32f240.h": "c",
+        "utility.h": "c"
+    }
 }
