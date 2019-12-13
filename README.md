@@ -8,7 +8,7 @@
 
 ## Chips
 
-* Main MCU - Evision [VS11K09A-1](http://evision.net.cn/include/upload/kind/file/20190413/20190413174647_5965.pdf), Seems to be based on the [Sonix SN32F249](http://www.sonix.com.tw/files/1/8B8FCED7AC687FBAE050007F01005CB5)
+* Main MCU - Evision [VS11K09A-1](http://evision.net.cn/include/upload/kind/file/20190413/20190413174647_5965.pdf), Seems to be based on the [Sonix SN32F249 | SN32F4xB](http://www.sonix.com.tw/files/1/8B8FCED7AC687FBAE050007F01005CB5)
 * Bluetooth - !TON??? [PAR2801QN-GHVC](https://en.sziton.com/wp-content/uploads/datasheets/module/PAR2801-Q32P-datasheet-v1.2.pdf)
 * LED driver - Vision [VSPW01](http://www.evision.net.cn/include/upload/kind/file/20190413/20190413175237_5340.pdf)
 
@@ -17,6 +17,14 @@
 1. Hookup SWCLK, SWDIO, and Ground using the testpoints outlined below
     * Inset image here
 2. Using the ground point hold the boot pin to ground while turning on the power
+
+## Firware Flash
+1. Download the USB MCU ISP [tool](http://www.sonix.com.tw/files/1/8226BAA772296B66E050007F010014EB)
+2. Open the program and click load file.
+3. Select SN32F4xB and then the firmware file.
+4. The VID should alread be `0C45` and enter `766B` for the PID.
+5. Click Start
+6. Profit!
 
 ## Tools
 
