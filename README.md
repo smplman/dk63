@@ -39,7 +39,7 @@ Use this information at your own risk. I'm not liable if you break something.
 2. Hookup the other ends of the wires to your debugger. I used a Raspberry PI 3 and the ST-Link V2.
 3. Using the ground point hold the boot pin to ground while turning on the power.
 
-## Extract default dk63 frimware.hex
+## Extract default dk63 firmware.hex
 1. Download [Resource Hacker](http://www.angusj.com/resourcehacker/) (Not sure of a mac or linux variant)
 2. Download [Firmware Update tool](https://kmovetech.com/DIERYA%20&%20Kemove%20Wired%20mode%20firmware%20update.rar)
 3. Extract the firmware .rar and open the .exe in RH
