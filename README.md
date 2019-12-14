@@ -31,11 +31,13 @@ Use this information at your own risk. I'm not liable if you break something.
 * Bluetooth - !TON??? [PAR2801QN-GHVC](https://en.sziton.com/wp-content/uploads/datasheets/module/PAR2801-Q32P-datasheet-v1.2.pdf)
 * LED driver - Vision [VSPW01](http://www.evision.net.cn/include/upload/kind/file/20190413/20190413175237_5340.pdf)
 
-## Evision [VS11K09A-1] Debug Recovery Mode
+## Evision VS11K09A-1 Debug Recovery Mode / SWD
 
 1. Hookup SWCLK, SWDIO, and Ground using the testpoints outlined below
     ![connections](https://raw.githubusercontent.com/smp4488/dk63/master/photos/IMG_0276-marked.jpg)
-2. Using the ground point hold the boot pin to ground while turning on the power
+    * Note: These pins are being use by the MCU to control functionality. Im tyring to enable SWD in the default firmware to debug without Debug Recovery Mode.
+2. Hookup the other ends of the wires to your debugger. I used a Raspberry PI 3 and the ST-Link V2.
+3. Using the ground point hold the boot pin to ground while turning on the power.
 
 ## Extract default dk63 frimware.hex
 1. Download [Resource Hacker](http://www.angusj.com/resourcehacker/)(Not sure of a mac or linux variant)
