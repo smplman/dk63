@@ -40,14 +40,14 @@ Use this information at your own risk. I'm not liable if you break something.
 3. Using the ground point hold the boot pin to ground while turning on the power.
 
 ## Extract default dk63 frimware.hex
-1. Download [Resource Hacker](http://www.angusj.com/resourcehacker/)(Not sure of a mac or linux variant)
+1. Download [Resource Hacker](http://www.angusj.com/resourcehacker/) (Not sure of a mac or linux variant)
 2. Download [Firmware Update tool](https://kmovetech.com/DIERYA%20&%20Kemove%20Wired%20mode%20firmware%20update.rar)
-3. Extract the firware .rar and open the .exe in RH
-4. Look for `RCData 4000:0` this is the hex file of the firmware
+3. Extract the firmware .rar and open the .exe in RH
+4. Look for `RCData 4000:0`, this is the hex file of the firmware
 5. Right click on `4000:0` and choose `Save Resource to BIN file`
-6. Save the firware so it can be examined or uplodaded.
+6. Save the firmware so it can be examined or uplodaded.
 
-## Firware Flash
+## Firmware Flash
 1. Download the USB MCU ISP [tool](http://www.sonix.com.tw/files/1/8226BAA772296B66E050007F010014EB)
 2. Open the program and click load file.
 3. Select `SN32F4xB` and then the firmware file.
