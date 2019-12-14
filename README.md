@@ -31,7 +31,7 @@
 ## Evision [VS11K09A-1] Debug Recovery Mode
 
 1. Hookup SWCLK, SWDIO, and Ground using the testpoints outlined below
-    * Inset image here
+    ![connections](https://raw.githubusercontent.com/smp4488/dk63/master/photos/IMG_0276-marked.jpg)
 2. Using the ground point hold the boot pin to ground while turning on the power
 
 ## Firware Flash
@@ -41,6 +41,11 @@
 4. The VID should alread be `0C45` and enter `766B` for the PID.
 5. Click Start
 6. Profit!
+
+## ST-Link V2
+* I was not able to get this to work with the st-link software on windows.
+* I did manage to get it to work with openocd using [this config](https://github.com/smp4488/dk63/blob/master/stlink.cfg)
+* Working on the `SN32F24X` config [here](https://github.com/smp4488/dk63/blob/master/vs11k09a-1.cfg)
 
 ## Tools
 
