@@ -6,6 +6,20 @@
 * [Firmware Download](https://kmovetech.com/art/download-a0038.html)
 * [Reddit Post](https://www.reddit.com/r/embedded/comments/e4iriu/keyboard_mcu_help/)
 
+## Tasks
+
+- [*] Identify MCU `VS11K09A-1` / `Sonix SN32F248BF`
+- [*] Find data sheet [VS11K09A-1](http://evision.net.cn/include/upload/kind/file/20190413/20190413174647_5965.pdf) / [Sonix SN32F248BF](http://www.sonix.com.tw/files/1/995616A87F74C17AE050007F0100760D)
+- [*] Find SDK and dev tools
+- [*] Get SWD working
+- [*] Ability to flash firmware
+- [*] Get origional firmware
+- [ ] Enable SWD in current firmware
+- [ ] Port Chibios to `Sonix SN32F248BF`
+    - [ ] add sub tasks
+- [ ] Get QMK firmware working
+    - [ ] add sub tasks
+
 ## Chips
 
 * Main MCU - Evision [VS11K09A-1](http://evision.net.cn/include/upload/kind/file/20190413/20190413174647_5965.pdf), Seems to be based on the [Sonix SN32F248BF](http://www.sonix.com.tw/files/1/995616A87F74C17AE050007F0100760D)
@@ -21,7 +35,7 @@
 ## Firware Flash
 1. Download the USB MCU ISP [tool](http://www.sonix.com.tw/files/1/8226BAA772296B66E050007F010014EB)
 2. Open the program and click load file.
-3. Select SN32F4xB and then the firmware file.
+3. Select `SN32F4xB` and then the firmware file.
 4. The VID should alread be `0C45` and enter `766B` for the PID.
 5. Click Start
 6. Profit!
