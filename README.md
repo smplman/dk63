@@ -15,10 +15,12 @@
 - [x] Ability to flash firmware
 - [x] Get origional firmware
 - [ ] Enable SWD in current firmware
-- [ ] Port Chibios to `Sonix SN32F248BF`
-    - [ ] add sub tasks
+- [ ] Port Chibios to `Sonix SN32F248BF` [porting guide](http://wiki.chibios.org/dokuwiki/doku.php?id=chibios:guides:port_guide)
+    - [ ] Get compiler to work with `SN32F248BF` Keil packs
 - [ ] Get QMK firmware working
-    - [ ] add sub tasks
+    - [ ] Basic keyboard functionality [Build Tools](https://docs.qmk.fm/#/getting_started_build_tools)
+    - [ ] RGB Leds and animations `VSPW01` [RGB Matrix](https://docs.qmk.fm/#/feature_rgb_matrix)
+    - [ ] Bluetooth `PAR2801QN-GHVC` [docs](https://docs.qmk.fm/#/feature_bluetooth)
 
 ## Chips
 
