@@ -1,5 +1,8 @@
 # DK63 Firmware Reverse Engineering
 
+This project is to reverse engineer the Kmove / DIERYA DK63 to get QMK running on it.
+Use this information at your own risk. I'm not liable if you break something.
+
 ## Keyboard
 
 * [Vendor Page](https://kmovetech.com/dierya-mechanical-gaming-keyboard-rgb-bluetooth40-wired-wireless-multi-device-iphone-android-mobile-pc-p0013.html)
