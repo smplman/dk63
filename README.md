@@ -8,12 +8,12 @@
 
 ## Tasks
 
-- [*] Identify MCU `VS11K09A-1` / `Sonix SN32F248BF`
-- [*] Find data sheet [VS11K09A-1](http://evision.net.cn/include/upload/kind/file/20190413/20190413174647_5965.pdf) / [Sonix SN32F248BF](http://www.sonix.com.tw/files/1/995616A87F74C17AE050007F0100760D)
-- [*] Find SDK and dev tools
-- [*] Get SWD working
-- [*] Ability to flash firmware
-- [*] Get origional firmware
+- [x] Identify MCU `VS11K09A-1` / `Sonix SN32F248BF`
+- [x] Find data sheet [VS11K09A-1](http://evision.net.cn/include/upload/kind/file/20190413/20190413174647_5965.pdf) / [Sonix SN32F248BF](http://www.sonix.com.tw/files/1/995616A87F74C17AE050007F0100760D)
+- [x] Find SDK and dev tools
+- [x] Get SWD working
+- [x] Ability to flash firmware
+- [x] Get origional firmware
 - [ ] Enable SWD in current firmware
 - [ ] Port Chibios to `Sonix SN32F248BF`
     - [ ] add sub tasks
