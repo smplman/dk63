@@ -103,6 +103,9 @@ https://the6p4c.github.io/2018/01/15/hacking-the-gc-part-1.html
 Raspberry PI OpenOCD SWD / JTAG
 https://iosoft.blog/2019/01/28/raspberry-pi-openocd/
 
+OpenOcd Creating Flash Drivers
+https://github.com/doctek/COOCDFlash/wiki/Creating-and-using-flash-drivers
+
 Stack Exchange ARM Firmware Reverse Engineering Walkthrough
 https://reverseengineering.stackexchange.com/questions/15311/running-a-binary-identified-as-an-arm-excutable-by-binwalk-disasm/15317
 https://reverseengineering.stackexchange.com/questions/15006/approach-to-extract-useful-information-from-binary-file
