@@ -61,8 +61,8 @@ Use this information at your own risk. I'm not liable if you break something.
 * Working on the `SN32F24X` config [here](https://github.com/smp4488/dk63/blob/master/vs11k09a-1.cfg)
 
 ## Firmware Dump
-* (https://blog.includesecurity.com/2015/11/NordicSemi-ARM-SoC-Firmware-dumping-technique.html?m=1&utm_source=share&utm_medium=ios_app&utm_name=iossmf)
-
+* [Coretex M0 Exploit](https://blog.includesecurity.com/2015/11/NordicSemi-ARM-SoC-Firmware-dumping-technique.html?m=1&utm_source=share&utm_medium=ios_app&utm_name=iossmf)
+* [Keil ROM Self-Test Checksum](http://www.keil.com/appnotes/files/an277.pdf)
 ## Tools
 
 * [Ghidra](https://ghidra-sre.org/)
