@@ -26,7 +26,7 @@ for file in files:
 
     assert (end - start) == len(binary)
 
-    with open("output.bin", "r+b") as fout:
+    with open("output.bin", "w+b") as fout:
         fout.seek(start)
         fout.write(binary)
 
