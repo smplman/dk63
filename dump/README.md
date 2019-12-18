@@ -14,3 +14,10 @@ si
 info reg
 
 then run dump1.py
+
+# gdb
+'arm-none-eabi-gdb.exe -ex "target remote 192.168.1.6:3333" '
+
+# dump-memory.py
+
+python3 dump-memory.py 0x1FFF0000 0x100 test.bin --openocd 192.168.1.6:4444 --ldr-gadget 0x1FFF0420 --reg1 r0 --reg2 r0
