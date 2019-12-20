@@ -2,7 +2,8 @@ import usb.core
 import usb.util
 
 # find our device
-dev = usb.core.find(idVendor=0x0C45, idProduct=0x766B)
+# dev = usb.core.find(idVendor=0x0C45, idProduct=0x766B)
+dev = usb.core.find(idVendor=0x0C45, idProduct=0x7040)
 
 # was it found?
 if dev is None:
@@ -41,18 +42,18 @@ dev.set_configuration()
 endpoint = dev[0][(0, 0)][0]
 attempts = 10
 data = None
-# while data is None and attempts > 0:
-while True:
-    try:
-        data = dev.read(endpoint.bEndpointAddress, endpoint.wMaxPacketSize)
-        print data
-    except usb.core.USBError as e:
-        data = None
-        if e.args == ('Operation timed out',):
-            attempts -= 1
-            continue
+# # while data is None and attempts > 0:
+# while True:
+#     try:
+#         data = dev.read(endpoint.bEndpointAddress, endpoint.wMaxPacketSize)
+#         print(data)
+#     except usb.core.USBError as e:
+#         data = None
+#         if e.args == ('Operation timed out',):
+#             attempts -= 1
+#             continue
 
-print data
+# print(data)
 
 # # get an endpoint instance
 # cfg = dev.get_active_configuration()
@@ -70,3 +71,4 @@ print data
 
 # # write the data
 # ep.write('test')
+endpoint.write('test');
