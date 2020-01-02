@@ -63,6 +63,11 @@ Use this information at your own risk. I'm not liable if you break something.
 ## Firmware Dump
 * [Coretex M0 Exploit](https://blog.includesecurity.com/2015/11/NordicSemi-ARM-SoC-Firmware-dumping-technique.html?m=1&utm_source=share&utm_medium=ios_app&utm_name=iossmf)
 * [Keil ROM Self-Test Checksum](http://www.keil.com/appnotes/files/an277.pdf)
+
+## GDB Recovery Mode
+1. set $pc=0x1FFF0301
+2. cont
+
 ## Tools
 
 * [Ghidra](https://ghidra-sre.org/)

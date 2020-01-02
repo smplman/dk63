@@ -4,7 +4,7 @@ import hid
 import time
 
 vid = 0x0c45
-pid = 0x8075
+pid = 0x766B
 
 def main():
     with hid.Device(vid, pid) as h:

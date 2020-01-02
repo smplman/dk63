@@ -45,14 +45,14 @@ data = None
 while True:
     try:
         data = dev.read(endpoint.bEndpointAddress, endpoint.wMaxPacketSize)
-        print data
+        print(data)
     except usb.core.USBError as e:
         data = None
         if e.args == ('Operation timed out',):
             attempts -= 1
             continue
 
-print data
+# print (data)
 
 # # get an endpoint instance
 # cfg = dev.get_active_configuration()
