@@ -1,34 +1,37 @@
 #!/usr/bin/env python3
 import struct
 import sys
-
-import usb.core
-import usb.util
-
+import time
+import hid
 import argparse
 
-
 CMD_BASE = 0x55AA00
-
 
 def hid_set_feature(dev, report):
     if len(report) > 64:
         raise RuntimeError("report must be less than 64 bytes")
+    # report = b"\x030" + report
     report += b"\x00" * (64 - len(report))
 
-    dev.ctrl_transfer(
-        0x21, # REQUEST_TYPE_CLASS | RECIPIENT_INTERFACE | ENDPOINT_OUT
-        9, # SET_REPORT
-        0x300, 0x00,
-        report)
+    # print(report)
+    dev.send_feature_report(report)
+
+    # dev.ctrl_transfer(
+    #     0x21, # REQUEST_TYPE_CLASS | RECIPIENT_INTERFACE | ENDPOINT_OUT
+    #     9, # SET_REPORT
+    #     0x300, 0x00,
+    #     report)
 
 
 def hid_get_feature(dev):
-    return dev.ctrl_transfer(
-        0xA1, # REQUEST_TYPE_CLASS | RECIPIENT_INTERFACE | ENDPOINT_IN
-        1, # GET_REPORT
-        0x300, 0x00,
-        64)
+    # return dev.ctrl_transfer(
+    #     0xA1, # REQUEST_TYPE_CLASS | RECIPIENT_INTERFACE | ENDPOINT_IN
+    #     1, # GET_REPORT
+    #     0x300, 0x00,
+    #     64)
+    time.sleep(0.05)
+
+    return dev.get_feature_report(0, 64)
 
 
 def detach_drivers(dev):
@@ -38,7 +41,7 @@ def detach_drivers(dev):
             if dev.is_kernel_driver_active(intf.bInterfaceNumber):
                 try:
                     dev.detach_kernel_driver(intf.bInterfaceNumber)
-                except usb.core.USBError as e:
+                except dev.core.USBError as e:
                     sys.exit("Could not detatch kernel driver from interface({0}): {1}".format(intf.bInterfaceNumber, str(e)))
 
 
@@ -59,7 +62,11 @@ def main():
     if len(firmware) % 64 != 0:
         raise RuntimeError("firmware size must be divisible by 64")
 
-    dev = usb.core.find(idVendor=args.vid, idProduct=args.pid)
+    dev = hid.device()
+    dev.open(args.vid, args.pid)
+    dev.set_nonblocking(1)
+
+    # dev = usb.core.find(idVendor=args.vid, idProduct=args.pid)
     print(dev)
     if dev is None:
         raise RuntimeError("device not found")
@@ -69,7 +76,11 @@ def main():
     print("Initialize")
     hid_set_feature(dev, struct.pack("<I", CMD_BASE + 1))
     resp = bytes(hid_get_feature(dev))
+    # print(resp)
     cmd, status = struct.unpack("<II", resp[0:8])
+    print(resp)
+    print(hex(cmd))
+    print(hex(status))
     assert cmd == CMD_BASE + 1
     assert status == 0xFAFAFAFA
 
@@ -79,6 +90,10 @@ def main():
     hid_set_feature(dev, struct.pack("<III", CMD_BASE + 5, 0, len(firmware) // 64))
     resp = bytes(hid_get_feature(dev))
     cmd, status = struct.unpack("<II", resp[0:8])
+    # print(resp)
+    # print(hex(cmd))
+    # print(hex(CMD_BASE + 1))
+    # print(hex(status))
     assert cmd == CMD_BASE + 5
     assert status == 0xFAFAFAFA
 
