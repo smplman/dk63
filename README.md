@@ -118,6 +118,9 @@ Stack Exchange ARM Firmware Reverse Engineering Walkthrough
 https://reverseengineering.stackexchange.com/questions/15311/running-a-binary-identified-as-an-arm-excutable-by-binwalk-disasm/15317
 https://reverseengineering.stackexchange.com/questions/15006/approach-to-extract-useful-information-from-binary-file
 
+QMK Nuvoton Port PR
+[https://github.com/qmk/ChibiOS-Contrib/pull/10]
+
 * https://docs.qmk.fm/
 * https://github.com/qmk/qmk_firmware/blob/ee700b2e831067bdb7584425569b61bc6329247b/tmk_core/protocol/chibios/README.md
 * http://wiki.chibios.org/dokuwiki/doku.php?id=chibios:guides:port_guide
