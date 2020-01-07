@@ -33,8 +33,12 @@ def hid_get_feature(dev):
 
 def detach_drivers(dev):
     for cfg in dev:
+        print(cfg)
         for intf in cfg:
+            dev.reset()
             dev.detach_kernel_driver(intf.bInterfaceNumber)
+            dev.set_configuration()
+
             if dev.is_kernel_driver_active(intf.bInterfaceNumber):
                 try:
                     dev.detach_kernel_driver(intf.bInterfaceNumber)
@@ -64,7 +68,7 @@ def main():
     if dev is None:
         raise RuntimeError("device not found")
 
-    # detach_drivers(dev)
+    detach_drivers(dev)
 
     print("Initialize")
     hid_set_feature(dev, struct.pack("<I", CMD_BASE + 1))
