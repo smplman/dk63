@@ -68,6 +68,9 @@ Use this information at your own risk. I'm not liable if you break something.
 1. set $pc=0x1FFF0301
 2. cont
 
+## Docker
+* [Docker Machine on OS X](http://gw.tnode.com/docker/docker-machine-with-usb-support-on-windows-macos/)
+
 ## Tools
 
 * [Ghidra](https://ghidra-sre.org/)
@@ -127,3 +130,4 @@ QMK Nuvoton Port PR
 * https://github.com/ChibiOS/ChibiOS/tree/14f274991fc85b70dd4294c482f6d4ce79e72339/os/hal/boards/OLIMEX_MSP430_P1611
 * http://www.sonix.com.tw/article-en-998-21393
 * https://ydiaeresis.wordpress.com/2018/04/23/i-dont-steal-bikes-part-2/
+* https://interrupt.memfault.com/blog/cortex-m-fault-debug#registers-prior-to-exception
