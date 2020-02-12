@@ -12,7 +12,7 @@ Use this information at your own risk. I'm not liable if you break something.
 ## Tasks
 
 - [x] Identify MCU `VS11K09A-1` / `Sonix SN32F248BF`
-- [x] Find data sheet [VS11K09A-1](http://evision.net.cn/include/upload/kind/file/20190413/20190413174647_5965.pdf) / [Sonix SN32F248BF](http://www.sonix.com.tw/files/1/995616A87F74C17AE050007F0100760D)
+- [x] Find data sheet [VS11K09A-1](http://evision.net.cn/include/upload/kind/file/20190413/20190413174647_5965.pdf) / [Sonix SN32F248B](http://www.sonix.com.tw/files/1/9BB2674D32FB0D70E050007F01007532)
 - [x] Find SDK and dev tools
 - [x] Get SWD working
 - [x] Ability to flash firmware
@@ -27,7 +27,7 @@ Use this information at your own risk. I'm not liable if you break something.
 
 ## Chips
 
-* Main MCU - Evision [VS11K09A-1](http://evision.net.cn/include/upload/kind/file/20190413/20190413174647_5965.pdf), Seems to be based on the [Sonix SN32F248BF](http://www.sonix.com.tw/files/1/995616A87F74C17AE050007F0100760D)
+* Main MCU - Evision [VS11K09A-1](http://evision.net.cn/include/upload/kind/file/20190413/20190413174647_5965.pdf), Seems to be based on the [Sonix SN32F248BF](http://www.sonix.com.tw/files/1/9BB2674D32FB0D70E050007F01007532)
 * Bluetooth - !TON??? [PAR2801QN-GHVC](https://en.sziton.com/wp-content/uploads/datasheets/module/PAR2801-Q32P-datasheet-v1.2.pdf)
 * LED driver - Vision [VSPW01](http://www.evision.net.cn/include/upload/kind/file/20190413/20190413175237_5340.pdf)
 
