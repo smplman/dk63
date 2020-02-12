@@ -22,7 +22,7 @@ openocd-stop:
 # start gdb session
 gdb:
 	# arm-none-eabi-gdb.exe ./.build/kmove_dk63_default.elf -ex "target remote :3333" -ex "set confirm off" -ex "set pagination off"
-	arm-none-eabi-gdb /qmk_firmware/.build/kmove_dk63_default.elf -ex "target remote :3333" -ex "set confirm off" -ex "set pagination off"
+	arm-none-eabi-gdb ../qmk_firmware-9/.build/kmove_dk63_default.elf -ex "target remote 192.168.99.102:3333" -ex "set confirm off" -ex "set pagination off"
 
 # dfu and upload
 all: openocd dfu openocd-stop upload
