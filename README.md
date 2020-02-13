@@ -20,18 +20,25 @@ Use this information at your own risk. I'm not liable if you break something.
 - [x] Enable SWD in current firmware
 - [x] Port Chibios to `Sonix SN32F248BF` [porting guide](http://wiki.chibios.org/dokuwiki/doku.php?id=chibios:guides:port_guide)
     - [ ] ~Get compiler to work with `SN32F248BF` Keil packs~
+    - [ ] USB LLD
+    - [ ] GPIO LLD
+    - [ ] UART LLD
+    - [ ] Timers LLD
+    - [ ] SPI LLD
+    - [ ] I2C LLD
 - [x] Get QMK firmware working
     - [x] Basic keyboard functionality [Build Tools](https://docs.qmk.fm/#/getting_started_build_tools)
     - [ ] RGB Leds and animations `VSPW01` [RGB Matrix](https://docs.qmk.fm/#/feature_rgb_matrix)
     - [ ] Bluetooth `PAR2801QN-GHVC` [docs](https://docs.qmk.fm/#/feature_bluetooth)
+- [ ] Dump origional bootloader
 
 ## Chips
 
-* Main MCU - Evision [VS11K09A-1](http://evision.net.cn/include/upload/kind/file/20190413/20190413174647_5965.pdf), Seems to be based on the [Sonix SN32F248BF](http://www.sonix.com.tw/files/1/9BB2674D32FB0D70E050007F01007532)
-* Bluetooth - ~!TON~ PXI PAR2801QN-GHVC
+* Main MCU - EVision [VS11K09A-1](http://evision.net.cn/include/upload/kind/file/20190413/20190413174647_5965.pdf), Seems to be based on the [Sonix SN32F248BF](http://www.sonix.com.tw/files/1/9BB2674D32FB0D70E050007F01007532)
+* Bluetooth - ~!TON~ PXI Pixart PAR2801QN-GHVC
     * [FCC Doc](https://fccid.io/2AIPB-PAJ2801UA-40/User-Manual/Users-Manual-3083972) 
     * [PAR2801QN-GHVC](https://en.sziton.com/wp-content/uploads/datasheets/module/PAR2801-Q32P-datasheet-v1.2.pdf)
-* ~LED driver~ Charging Chip - Vision [VSPW01](http://www.evision.net.cn/include/upload/kind/file/20190413/20190413175237_5340.pdf)
+* ~LED driver~ Charging Chip - EVision [VSPW01](http://www.evision.net.cn/include/upload/kind/file/20190413/20190413175237_5340.pdf)
 
 ## Evision VS11K09A-1 Debug Recovery Mode / SWD
 
@@ -40,6 +47,18 @@ Use this information at your own risk. I'm not liable if you break something.
     * Note: These pins are being use by the MCU to control functionality. Im tyring to enable SWD in the default firmware to debug without Debug Recovery Mode.
 2. Hookup the other ends of the wires to your debugger. I used a Raspberry PI 3 and the ST-Link V2.
 3. Using the ground point hold the boot pin to ground while turning on the power.
+
+## LEDs
+
+They seem to be driven by GPIO and transistors.
+- [ ] Figure out pin map and matrix
+- [ ] Caps lock LED
+
+## Bluetooth
+
+Appears to be an another ARM Cortex M0 MCU with UART and GPIO.
+- [ ] SWD debugging
+- [ ] Pin map to main MCU
 
 ## Extract default dk63 firmware.hex
 1. Download [Resource Hacker](http://www.angusj.com/resourcehacker/) (Not sure of a mac or linux variant)
@@ -133,3 +152,5 @@ QMK Nuvoton Port PR
 * http://www.sonix.com.tw/article-en-998-21393
 * https://ydiaeresis.wordpress.com/2018/04/23/i-dont-steal-bikes-part-2/
 * https://interrupt.memfault.com/blog/cortex-m-fault-debug#registers-prior-to-exception
+* https://github.com/bnahill/PyCortexMDebug
+* http://zuendmasse.de/blog/2018/01/21/gdb-+-svd/
