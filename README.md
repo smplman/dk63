@@ -17,19 +17,21 @@ Use this information at your own risk. I'm not liable if you break something.
 - [x] Get SWD working
 - [x] Ability to flash firmware
 - [x] Get origional firmware
-- [ ] Enable SWD in current firmware
-- [ ] Port Chibios to `Sonix SN32F248BF` [porting guide](http://wiki.chibios.org/dokuwiki/doku.php?id=chibios:guides:port_guide)
-    - [ ] Get compiler to work with `SN32F248BF` Keil packs
-- [ ] Get QMK firmware working
-    - [ ] Basic keyboard functionality [Build Tools](https://docs.qmk.fm/#/getting_started_build_tools)
+- [x] Enable SWD in current firmware
+- [x] Port Chibios to `Sonix SN32F248BF` [porting guide](http://wiki.chibios.org/dokuwiki/doku.php?id=chibios:guides:port_guide)
+    - [ ] ~Get compiler to work with `SN32F248BF` Keil packs~
+- [x] Get QMK firmware working
+    - [x] Basic keyboard functionality [Build Tools](https://docs.qmk.fm/#/getting_started_build_tools)
     - [ ] RGB Leds and animations `VSPW01` [RGB Matrix](https://docs.qmk.fm/#/feature_rgb_matrix)
     - [ ] Bluetooth `PAR2801QN-GHVC` [docs](https://docs.qmk.fm/#/feature_bluetooth)
 
 ## Chips
 
 * Main MCU - Evision [VS11K09A-1](http://evision.net.cn/include/upload/kind/file/20190413/20190413174647_5965.pdf), Seems to be based on the [Sonix SN32F248BF](http://www.sonix.com.tw/files/1/9BB2674D32FB0D70E050007F01007532)
-* Bluetooth - !TON??? [PAR2801QN-GHVC](https://en.sziton.com/wp-content/uploads/datasheets/module/PAR2801-Q32P-datasheet-v1.2.pdf)
-* LED driver - Vision [VSPW01](http://www.evision.net.cn/include/upload/kind/file/20190413/20190413175237_5340.pdf)
+* Bluetooth - ~!TON~ PXI PAR2801QN-GHVC
+    * [FCC Doc](https://fccid.io/2AIPB-PAJ2801UA-40/User-Manual/Users-Manual-3083972) 
+    * [PAR2801QN-GHVC](https://en.sziton.com/wp-content/uploads/datasheets/module/PAR2801-Q32P-datasheet-v1.2.pdf)
+* ~LED driver~ Charging Chip - Vision [VSPW01](http://www.evision.net.cn/include/upload/kind/file/20190413/20190413175237_5340.pdf)
 
 ## Evision VS11K09A-1 Debug Recovery Mode / SWD
 
