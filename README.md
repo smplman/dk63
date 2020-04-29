@@ -21,17 +21,17 @@ Use this information at your own risk. I'm not liable if you break something.
 - [x] Enable SWD in current firmware
 - [x] Port Chibios to `Sonix SN32F248BF` [porting guide](http://wiki.chibios.org/dokuwiki/doku.php?id=chibios:guides:port_guide)
     - [ ] ~Get compiler to work with `SN32F248BF` Keil packs~
-    - [ ] USB LLD
-    - [ ] GPIO LLD
-    - [ ] UART LLD
-    - [ ] Timers LLD
+    - [x] USB LLD
+    - [x] GPIO LLD
+    - [ ] ~UART LLD~
+    - [x] Timers LLD
     - [ ] SPI LLD
-    - [ ] I2C LLD
+    - [ ] ~I2C LLD~
 - [x] Get QMK firmware working
     - [x] Basic keyboard functionality [Build Tools](https://docs.qmk.fm/#/getting_started_build_tools)
-    - [ ] RGB Leds and animations `VSPW01` [RGB Matrix](https://docs.qmk.fm/#/feature_rgb_matrix)
+    - [x] RGB Leds and animations `VSPW01` [RGB Matrix](https://docs.qmk.fm/#/feature_rgb_matrix)
     - [ ] Bluetooth `PAR2801QN-GHVC` [docs](https://docs.qmk.fm/#/feature_bluetooth)
-- [ ] Dump origional bootloader
+- [x] Dump origional bootloader
 
 ## Chips
 
